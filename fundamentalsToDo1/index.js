@@ -61,3 +61,65 @@ function leapYear(year) {
     }
 }
 // leapYear(1704)
+
+// Print and Count
+
+function multiplesOfFive() {
+    let count = 0;
+    for(let i = 512; i <= 4096; i++) {
+        if(i%5 === 0) {
+            count++;
+            console.log(`${i} is the ${count} count`)
+        }
+    }
+    return count;
+}
+// multiplesOfFive()
+
+// Multiples of six
+
+function multipleOfSix() {
+    var i = 0;
+    while(i <= 60000) {
+        if(i%6===0) {
+            console.log(i);
+        }
+        i++;
+    }
+}
+// multipleOfSix()
+
+// counting the dojo way
+
+function codingDojo() {
+    for(let i = 0; i <= 100; i ++) {
+        if(i%5===0) {
+            console.log("Coding")
+        }
+        else console.log("Dojo")
+    }
+}
+// codingDojo()
+
+// what do you know?
+
+function myParam(param) {
+    console.log(param)
+}
+
+// myParam('Jonel')
+
+// Whoa, that sucker's huge
+
+function printOdd() {
+    let sum = 0;
+    for(let i = -300000; i <= 300000; i++) {
+        if(i%2===1) {
+            sum = sum + i;
+        }
+    }
+    console.log(sum)
+    return sum
+}
+
+printOdd()
