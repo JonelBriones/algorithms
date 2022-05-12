@@ -4,12 +4,14 @@ class Node {
         this.next = null;
     }
 }
+
+
 class LinkedList {
     constructor() {
         this.head = null;
     }
     addFront(val) {
-        let new_node = new Node(val);
+        let new_node = new Node( 10 );
         if(!this.head) {
             this.head = new_node;
             return this;
@@ -20,3 +22,5 @@ class LinkedList {
     }
 }
 
+new_node = new Node(10)
+another_node = new Node(8)
