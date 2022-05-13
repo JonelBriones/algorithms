@@ -5,7 +5,7 @@ let s =
 // "race a car";
 // "";
 
-var isPalindrome = function(s) {
+var isPalindromeV1 = function(s) {
     let newS = s.replace(/[^a-z0-9]/gi,'')
     let arr = [];
     let arrReverse = []
@@ -25,4 +25,25 @@ var isPalindrome = function(s) {
     console.log(newS)
     return true;
 };
-console.log(isPalindrome(s))
+
+
+// While Loop Version
+var isPalindromeV2 = function(s) {
+    let newS = s.replace(/[^a-z0-9]/gi,'');
+    let newSLowerCase = newS.toLowerCase();
+    let left = 0;
+    let right = newSLowerCase.length - 1;
+    while(left < right) {
+        if(newSLowerCase[left]!==newSLowerCase[right]) {
+            return false;
+        }
+        left++
+        right--
+    }
+    console.log(newSLowerCase)
+    return true
+};
+
+
+
+console.log(isPalindromeV2(s))
