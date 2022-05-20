@@ -44,7 +44,7 @@ new_node.addFront(5);
  // will remove the the node that is pointed to a null/end of the node list
 new_node.removeFront();
 
-// displays the last
+// displays the last node
 console.log(new_node.front());
 
 // console.log(new_node)
